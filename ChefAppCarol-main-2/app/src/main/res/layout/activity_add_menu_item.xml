@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Dish name -->
+    <EditText
+        android:id="@+id/editTextDishName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dish Name"
+        android:inputType="text" />
+
+    <!-- Dish description -->
+    <EditText
+        android:id="@+id/editTextDishDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dish Description"
+        android:inputType="textMultiLine" />
+
+    <!-- Select course (starter, main course, dessert) -->
+    <Spinner
+        android:id="@+id/spinnerCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Dish price -->
+    <EditText
+        android:id="@+id/editTextDishPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:inputType="numberDecimal" />
+
+    <!-- Button to add dish -->
+    <Button
+        android:id="@+id/buttonAddDish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Dish" />
+</LinearLayout>
